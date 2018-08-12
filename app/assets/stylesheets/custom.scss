@@ -5,6 +5,7 @@
 
 $gray-medium-light: #eaeaea; 
 
+
 /* universal */
 
 body {
@@ -22,7 +23,7 @@ textarea {
 .center {
   text-align: center;
   h1 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -45,12 +46,12 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-lignt;
+  color: $gray-light;
 }
 
 p {
   font-size: 1.1em;
-  line-height: 1.2em;
+  line-height: 1.7em;
 }
 
 
@@ -66,8 +67,8 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
   }
 }
 
@@ -80,8 +81,8 @@ footer {
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   a {
-    color: #gray;
-    &hover {
+    color: $gray;
+    &:hover {
       color: $gray-darker;
     }
   }
