@@ -19,5 +19,6 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
       assert_match micropost.content, response.body
     end
     assert_select 'div.pagination', count:1
+    
   end
 end
