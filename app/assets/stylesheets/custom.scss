@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 /* mixins, variables, etc. */
 
@@ -236,6 +237,7 @@ input {
 .microposts {
   list-style: none;
   padding: 0;
+  font-family: 'Noto Sans', cursive;
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
@@ -246,7 +248,6 @@ input {
   }
   .content {
     display: block;
-    margin-left: 60px;
     img {
       display: block;
       padding: 5px 0;
@@ -261,6 +262,16 @@ input {
     float: left;
     margin-right: 10px;
     margin-top: 5px;
+    border-radius: 50%;
+  }
+  .title {
+    display: block;
+    clear: both;
+    border-bottom: double 5px #FFC778;
+    display:inline-block;
+    font-size: x-large;
+    /*線の種類（二重線）太さ 色*/
+	
   }
 }
 
@@ -277,3 +288,4 @@ span.picture {
     border: 0;
   }
 }
+
