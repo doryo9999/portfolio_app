@@ -1,7 +1,13 @@
 class MicropostsController < ApplicationController
-  before_action :logged_in_user, only: [:create, :destroy]
+  before_action :logged_in_user, only: [:create, :destroy, :new]
   before_action :correct_user, only: :destroy
-  
+
+  def new
+    if logged_in?
+      @micropost = current_user.microposts.build
+      @feed_items = current_user.feed.paginate(page: params[:page]).search(params[:search])
+    end
+  end
   
   def create
     @micropost = current_user.microposts.build(micropost_params)
@@ -24,7 +30,7 @@ class MicropostsController < ApplicationController
   private
   
     def micropost_params
-      params.require(:micropost).permit(:content, :picture, :profile)
+      params.require(:micropost).permit(:content, :picture, :title)
     end
     
     def correct_user

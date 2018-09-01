@@ -6,7 +6,6 @@ class Micropost < ApplicationRecord
   validates :content, presence: true, length: { maximum: 140 }
   validate  :picture_size
   validates :title,   presence: true, length: { maximum: 100 }
-  default_scope -> { order(created_at: :desc) }
 
   def self.search(search) #ここでのself.はMicropost.を意味する
     if search

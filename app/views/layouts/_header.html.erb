@@ -8,7 +8,7 @@
             <div class="input-group">
                 <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "タイトル検索" %>
                 <span class="input-group-btn">
-                <  %= submit_tag 'Search', :name => nil,  class: "btn btn-default"  %>
+                <%= submit_tag 'Search', :name => nil,  class: "btn btn-default"  %>
                 </span>
             </div>
           <% end %>
@@ -16,6 +16,7 @@
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
         <% if logged_in? %>
+          <li><%= link_to "Post", post_path %></li>
           <li><%= link_to "Users", users_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
