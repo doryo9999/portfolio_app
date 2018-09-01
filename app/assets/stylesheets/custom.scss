@@ -64,6 +64,12 @@ p {
 
 /* header */
 
+.search-nav {
+  width: 200px;
+  padding-top: 9px;
+}
+
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -79,6 +85,10 @@ p {
   }
 }
 
+.search-nav {
+  width: 200px;
+  padding-top: 9px;
+}
 
 /* footer */
 
@@ -239,8 +249,8 @@ input {
   padding: 0;
   font-family: 'Noto Sans', cursive;
   li {
-    padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
+    padding: 1px 0 30px 0;
+    // border-top: 1px solid #e8e8e8;
   }
   .user {
     margin-top: 5em;
@@ -250,7 +260,7 @@ input {
     display: block;
     img {
       display: block;
-      padding: 5px 0;
+      padding: 10px 0;
     }
   }
   .timestamp {
@@ -289,3 +299,9 @@ span.picture {
   }
 }
 
+.box1 {
+    padding: 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 1px #a9a9a9;
+}
